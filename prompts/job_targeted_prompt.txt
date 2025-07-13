@@ -1,0 +1,15 @@
+You are a resume optimization expert.
+
+Here is the candidate’s current resume:
+{document}
+
+Here is the job description:
+{instruction}
+
+Your task is to:
+- Improve the resume so it aligns with the job
+- Add relevant keywords, skills, and technologies from the JD
+- Modify experience and summary accordingly
+- Keep it factual and professional
+- Output a complete resume in Markdown format
+- Make the Resume ATS friendly

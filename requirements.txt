@@ -8,6 +8,7 @@ colorama==0.4.6
 fastapi==0.115.13
 ffmpy==0.6.0
 filelock==3.18.0
+fpdf==1.7.2
 fsspec==2025.5.1
 gradio==5.34.0
 gradio_client==1.10.3
@@ -21,8 +22,11 @@ Jinja2==3.1.6
 jsonpatch==1.33
 jsonpointer==3.0.0
 langchain-core==0.3.65
+langchain==0.3.65
+langchain-openai==0.3.65
 langsmith==0.3.45
 lxml==5.4.0
+markdown==3.4.1
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
@@ -30,6 +34,7 @@ numpy==2.3.0
 orjson==3.10.18
 packaging==24.2
 pandas==2.3.0
+pdfkit==0.6.1
 pillow==11.2.1
 pydantic==2.11.7
 pydantic_core==2.33.2
@@ -64,16 +69,3 @@ urllib3==2.4.0
 uvicorn==0.34.3
 websockets==15.0.1
 zstandard==0.23.0
-pdfkit==0.6.1
-fpdf==1.7.2
-markdown==3.4.1
-fastapi
-uvicorn
-jinja2
-python-multipart
-langchain
-langchain-openai
-pdfkit
-PyPDF2
-python-docx
-python-dotenv

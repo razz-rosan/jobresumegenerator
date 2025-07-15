@@ -4,7 +4,8 @@ import os
 from datetime import datetime
 
 # Adjust path to your wkhtmltopdf binary
-PDFKIT_PATH = "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe"
+PDFKIT_PATH = "/usr/bin/wkhtmltopdf"
+
 config = pdfkit.configuration(wkhtmltopdf=PDFKIT_PATH)
 
 def generate_pdf(md_text):

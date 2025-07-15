@@ -1,38 +1,3 @@
-# import gradio as gr
-# from llm_chain import get_chain
-# from pdf_utils import generate_pdf
-# from utils import extract_text_from_file  
-
-# chain = get_chain()
-
-# def process(file, job_desc):
-#     try:
-#         resume_text = extract_text_from_file(file)
-#     except Exception as e:
-#         return f"❌ Error reading file: {e}", None
-    
-#     optimized = chain.invoke({
-#         "resume": resume_text,
-#         "job_description": job_desc
-#     })
-#     pdf_path = generate_pdf(optimized)
-#     return optimized, pdf_path
-
-# gr.Interface(
-#     fn=process,
-#     inputs=[
-#         gr.File(label="Upload Your Resume (PDF, DOCX, or TXT)"),  # ✅ File input
-#         gr.Textbox(label="Paste Job Description", lines=20, placeholder="Job description you're applying to")
-#     ],
-#     outputs=[
-#         gr.Textbox(label="Optimized Resume"),
-#         gr.File(label="Download Optimized Resume as PDF")
-#     ],
-#     title="📄 Smart Resume Generator Based on Job Description",
-#     description="Upload your resume file and job description to get a tailored resume that matches the job!"
-# ).launch()
-
-
 import gradio as gr
 from llm_chain import get_chain
 from pdf_utils import generate_pdf
@@ -131,5 +96,6 @@ with gr.Blocks() as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=7860)
+
 
